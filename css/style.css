@@ -1,0 +1,102 @@
+/* Estilos Gerais */
+
+:root {
+  font-size: 62.5%;
+  --cor-0: #fff;
+  --cor-1: #ccc;
+  --cor-2: #000;
+  --primary: #72c;
+  --primary-hover: #83c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  background-color: var(--cor-2);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+span {
+  display: block;
+}
+
+/* Conteúdo Prinipal */
+
+#container {
+  padding: 2rem;
+}
+
+img,
+p {
+  margin-bottom: 4rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 3.6rem;
+  line-height: 130%;
+  color: var(--cor-0);
+}
+
+p {
+  max-width: 45ch;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: var(--cor-1);
+}
+
+input,
+button {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  line-height: 150%;
+  border-radius: 0.5rem;
+  border-style: none;
+  outline-color: var(--primary);
+}
+
+input {
+  margin-bottom: 2rem;
+  border: 0.2rem solid var(--cor-1);
+}
+
+button {
+  color: var(--cor-0);
+  background-color: var(--primary);
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+}
+
+#resposta {
+  margin-top: 3rem;
+  color: var(--cor-0);
+  transition: opacity 1s ease-out;
+}
+
+#resposta span {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: var(--cor-1);
+}
